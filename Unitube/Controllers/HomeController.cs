@@ -15,14 +15,14 @@ namespace Unitube.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "This project is focused on connecting students from universities to communicate effectively on an intranet platform";
+            ViewBag.Message = "This project is focused on connecting students from universities to communicate effectively on an intranet platform.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Our contact page";
+            ViewBag.Message = "Our contact page.";
 
             return View();
         }
