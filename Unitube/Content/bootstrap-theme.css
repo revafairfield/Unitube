@@ -744,31 +744,3 @@ fieldset[disabled] .btn-danger.active {
     padding: 15px;
     margin: 0 auto;
 }
-
-h1 {
-    text-align: center;
-    color: white;
-    background-attachment: fixed;
-    font-family: 'Lato', sans-serif;
-    padding-top: 300px;
-    z-index: 0;
-    text-shadow: 0 0 2px black;
-    font-size: 50px;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Lato:300);
-
-div:nth-child(1) {
-    background-image: url(../Content/img/university.jpg)
-    height: 750px;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-div:nth-child(2) {
-    height: 400px;
-    width: 100%;
-    background-color: black;
-    z-index: 1;
-}

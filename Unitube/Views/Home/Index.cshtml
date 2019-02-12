@@ -1,12 +1,50 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-    <div class="jumbotron">
-        <h1 class="display-3">Connecting University Campuses</h1>
-        <p class="lead">Building an internal network for students from various universitites to communicate and collaborate within their respective campuses - viewable only for registered students </p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
-        </button>
-    </div>
+<style>
+    .display {
+        background-color: #ffffff;
+        height: 100%;
+        max-width: 100%;
+        opacity: 0.5;
+        filter: Alpha(opacity=50); /* IE8 and earlier */
+        text-shadow: 3px 3px 0px;
+        text-align: center;
+        color: white;
+        background-attachment: fixed;
+        font-family: 'Lato', sans-serif;
+        padding-top: 300px;
+        z-index: 0;
+        text-shadow: 0 0 2px black;
+        font-size: 50px;
+    }
+
+    .jumbotron {
+        margin: 0;
+        padding: 0;
+        height: 750px;
+        position: relative;
+        max-width: 100%;
+        overflow-y: hidden;
+        /* fallback for old browsers */
+        background-image: url(../Content/img/university.jpg);
+        /* flex-box thing */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        margin-bottom: 30px;
+    }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<center><div class="jumbotron">
+            <h1 class="display">University Campuses</h1>
+              <h4><p class="lead">Building an internal network for students from various universitites to communicate and collaborate within their respective campuses - viewable only for registered students </p></h4>
+              <h4>
+                  <a href="#" class="btn btn-success btn-lg">Sign up today</a></p>
+                  <br>
+                  <a href="#" class="btn btn-danger btn-lg">Follow us on oGithub</a></p>
+              </h4>
+            </div>
+</center>
