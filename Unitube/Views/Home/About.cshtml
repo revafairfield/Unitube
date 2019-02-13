@@ -1,10 +1,26 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "About Unitube";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<center>
-    <h2>@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
-
-    <p>University campus posts, videos and student collaboration on an internal basis.</p>
-</center>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @Styles.Render("~/Content/Site.css")
+    @Styles.Render("~/Content/bootstrap.css")
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <center>
+            <h2>@ViewBag.Title.</h2>
+            <h3>@ViewBag.Message</h3>
+        </center>
+        <h4>
+            <a href="#" class="btn btn-success btn-lg">Sign up today</a></p>
+            <br>
+            <a href="https://github.com/sajivfrancis/Unitube" class="btn btn-danger btn-lg">Follow us on Github</a></p>
+        </h4>
+    </div>
+</body>
+</html>

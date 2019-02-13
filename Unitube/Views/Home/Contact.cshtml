@@ -1,19 +1,37 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact Us";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<center>
-    <h2>@ViewBag.Title.</h2>
 
-    <address>
-        Fairfield University<br />
-        1073 N Benson Rd, Fairfield, CT 06824<br />
-        <abbr title="Phone">P:</abbr>
-        203-254-4000
-    </address>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @Styles.Render("~/Content/Site.css")
+    @Styles.Render("~/Content/bootstrap.css")
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="bg-text">
+        <center>
+            <h2>@ViewBag.Title.</h2>
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:connectsfrancis@gmail.com">Support</a><br />
-        <strong>Marketing:</strong> <a href="mailto:connectsfrancis@gmail.com">Marketing</a>
-    </address>
-</center>
+            <address>
+                Fairfield University<br />
+                1073 N Benson Rd, Fairfield, CT 06824<br />
+                <abbr title="Phone">P:</abbr>
+                203-254-4000
+            </address>
+            <address>
+                <strong>Support:</strong>   <a href="mailto:connectsfrancis@gmail.com">Support</a><br />
+                <strong>Marketing:</strong> <a href="mailto:connectsfrancis@gmail.com">Marketing</a>
+            </address>
+        </center>
+        <h4>
+            <a href="#" class="btn btn-success btn-lg">Sign up today</a></p>
+            <br>
+            <a href="https://github.com/sajivfrancis/Unitube" class="btn btn-danger btn-lg">Follow us on Github</a></p>
+        </h4>
+    </div>
+</body>
+</html>

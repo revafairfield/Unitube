@@ -338,6 +338,9 @@ fieldset[disabled] .btn-danger.active {
 
 .navbar {
     background-color: #9e3ce7;
+    background: url("img/university1.jpg") repeat-x center center;
+    padding-bottom: 20px;
+}
 }
 
     .navbar .navbar-brand {
@@ -487,6 +490,8 @@ fieldset[disabled] .btn-danger.active {
         background-color: #9e3ce7;
     }
 .navbar-inverse {
+    background: url("img/university1.jpg") repeat-x center center;
+    padding-bottom: 20px;
     background-image: -webkit-linear-gradient(top, #9e3ce7 0%, #9e3ce7 100%);
     background-image: -o-linear-gradient(top, #9e3ce7 0%, #9e3ce7 100%);
     background-image: -webkit-gradient(linear, left top, left bottom, from(#9e3ce7), to(#9e3ce7));
