@@ -487,11 +487,11 @@ fieldset[disabled] .btn-danger.active {
         background-color: #9e3ce7;
     }
 .navbar-inverse {
-    background-image: -webkit-linear-gradient(top, #9e3ce7 0%, #222 100%);
-    background-image: -o-linear-gradient(top, #9e3ce7 0%, #222 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#9e3ce7), to(#222));
-    background-image: linear-gradient(to bottom, #9e3ce7 0%, #222 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3c3c3c', endColorstr='#ff222222', GradientType=0);
+    background-image: -webkit-linear-gradient(top, #9e3ce7 0%, #9e3ce7 100%);
+    background-image: -o-linear-gradient(top, #9e3ce7 0%, #9e3ce7 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9e3ce7), to(#9e3ce7));
+    background-image: linear-gradient(to bottom, #9e3ce7 0%, #9e3ce7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9e3ce7', endColorstr='#ff9e3ce7', GradientType=0);
     filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
     background-repeat: repeat-x;
     border-radius: 4px;
