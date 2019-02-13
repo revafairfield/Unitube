@@ -5,6 +5,7 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
+    padding-bottom: 20px;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -62,4 +63,9 @@ body, html {
     width: 80%;
     padding: 20px;
     text-align: center;
+}
+
+.footer {
+    padding-bottom: 32000px;
+    margin-bottom: -32000px;
 }
