@@ -15,7 +15,7 @@ namespace Unitube.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "This project is focused on connecting students from universities to communicate effectively on an intranet platform.";
+            ViewBag.Message = "Connecting university students on an intranet social platform.";
 
             return View();
         }
