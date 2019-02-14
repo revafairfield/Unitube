@@ -11,6 +11,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @Styles.Render("~/Content/bootstrap.css")
     @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .navbar .login-btn {
+            position: absolute;
+            top: 10px;
+            bottom: 5px;
+            right: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            text-overflow: ellipsis;
+        }
+
+        .navbar .register-btn {
+            position: absolute;
+            top: 10px;
+            bottom: 5px;
+            right: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            display: inline-block;
+            text-overflow: ellipsis;
+        }
+
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -22,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img src='~/Content/img/logo.png' alt="" /></a>
+                <a class="navbar-brand" href="@Url.Action("Index", "Home")"><img class="logo-navbar" src='~/Content/img/logo.png' alt="" /></a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -31,11 +55,11 @@
                     <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="# class="dropdown-toggle" data-toggle="dropdown">Register <span class="caret"></span></a>
+                    <li class="active">
+                        <a href="#">Login</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Log In <span class="caret"></span></a>
+                    <li>
+                        <a href="#">Registration</a>
                     </li>
                 </ul>
             </div>
@@ -50,6 +74,21 @@
             </footer>
         </center>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+        $(document).ready(function () {
+            $('#down').on('click', function () {
+                $("html").scrollTop(0);
+                console.log("Clicked!");
+                $('html, body').animate({
+                    scrollTop: $(".main").offset().top
+                }, 1000);
+            });
+        });
+    </script>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

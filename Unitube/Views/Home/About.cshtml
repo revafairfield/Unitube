@@ -8,19 +8,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     @Styles.Render("~/Content/Site.css")
     @Styles.Render("~/Content/bootstrap.css")
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: monospace;
+        }
+
+        header {
+            height: 100vh;
+            background-image: url('~/Content/img/university.jpg');
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-size: cover;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .main {
+            width: 90%;
+            max-width: 100%;
+            margin: 10px 5% 0 5%;
+            font-size: 1.4em;
+            line-height: 1.4em;
+            /*padding: 15px;*/
+            background-color: #eee;
+            height: 100vh;
+        }
+
+            .main p {
+                padding: 10px;
+            }
+
+        #down {
+            position: absolute;
+            top: 85vh;
+            padding: 20px;
+            font-size: 2.5em;
+        }
+
+            #down:hover {
+                cursor: pointer;
+                background-color: #eee;
+                opacity: 0.8;
+            }
+    </style>
 </head>
-<body>
-    <div class="bg-image"></div>
-    <div class="bg-text">
-        <center>
-            <h2>@ViewBag.Title.</h2>
-            <h3>@ViewBag.Message</h3>
-        </center>
-        <h4>
-            <a href="#" class="btn btn-success btn-lg">Sign up today</a></p>
-            <br>
-            <a href="https://github.com/sajivfrancis/Unitube" class="btn btn-danger btn-lg">Follow us on Github</a></p>
-        </h4>
-    </div>
+<body style="background-image: url('~/Content/img/university.jpg');">
+    <center>
+        <header>
+            <div class="jumbotron jumbotron-fluid">
+                    <center>
+                        <h1>@ViewBag.Title.</h1>
+                        <h3>@ViewBag.Message</h3>
+                    </center>
+                    <h4>
+                        <a href="#" class="btn btn-success btn-lg">Sign up today</a></p>
+                        <br>
+                        <a href="https://github.com/sajivfrancis/Unitube" class="btn btn-danger btn-lg">Follow us on Github</a></p>
+                    </h4>
+                </div>
+        </header>
+    </center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+        $(document).ready(function () {
+            $('#down').on('click', function () {
+                $("html").scrollTop(0);
+                console.log("Clicked!");
+                $('html, body').animate({
+                    scrollTop: $(".main").offset().top
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>
